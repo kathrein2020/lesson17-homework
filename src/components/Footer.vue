@@ -1,8 +1,12 @@
 <template>
+
     <footer class="footer">
+
+      <router-link to="/"> 
       <div class="footer__logo">
         <img src="/src/assets/logo.png" alt="Логотип" class="logo-icon" />
         ДариБроДобро</div>
+      </router-link>
 
 
       <div class="header-cart">

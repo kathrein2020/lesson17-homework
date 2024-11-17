@@ -8,9 +8,11 @@
       <p><strong>Статус:</strong> {{ product.status }}</p>
       <p><strong>Описание:</strong> {{ product.description }}</p>
     </div>
-    <button class="add-to-cart-btn" @click="addToCart">
+
+    <button class="add-to-cart-btn" @click="addToCart">  
       Добавить в корзину
     </button>
+
   </div>
   <div v-else>
     <p>Загрузка...</p>
@@ -23,7 +25,9 @@ import { useStore } from '../store/';
 
 export default {
   setup() {
+    // store/index.js  useStore
     const store = useStore();
+    
     const route = useRoute();
 
     const productId = parseInt(route.params.id, 10);
@@ -32,7 +36,7 @@ export default {
    
     const product = store.currentProduct;
 
-    
+    //добавить в корзину
     const addToCart = () => {
       store.addToCart(product);
     };
@@ -63,7 +67,7 @@ export default {
 }
 
 .add-to-cart-btn {
-  background-color: grey;
+  background-color: rgb(233, 44, 44);
   color: white;
   border: none;
   padding: 10px 20px;

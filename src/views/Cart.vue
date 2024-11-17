@@ -1,17 +1,20 @@
 <template>
   <div class="cart">
-    <h1>Корзина</h1>
+    <h1>Корзина покупок</h1>
     <ul>
       <li v-for="item in cart" :key="item.id" class="cart-item">
-        <img :src="item.image" alt="product image" class="cart-item-image" />
-        <div class="cart-item-info">
-          <span>{{ item.name }} - {{ item.price }} ₸ {{ item.selectedOption }}</span>
-          <button class="remove-btn" @click="removeFromCart(item.id)">Удалить</button>
-        </div>
+        <img :src="item.image"  class="cart-item-image" />
+        <div class="cart-text">
+      {{ item.name }}  
+           <p> <strong> {{ item.price }} ₸  </strong>  </p>
+                  {{ item.selectedOption }}
+  </div>
+          <button class="remove-btn" @click="removeFromCart(item.id)">Удалить</button>        
       </li>
     </ul>
-    <p v-if="cart.length === 0">Ваша корзина пуста</p>
-    <p v-else><strong>Итоговая сумма: {{ calculateTotal() }} ₸ </strong></p>
+
+    <p v-if="cart.length === 0">Корзина пуста, налетай заполняй!</p>
+    <p v-else>Итоговая сумма: <strong> {{ calculateTotal() }} ₸ </strong></p>
   </div>
 </template>
 
@@ -34,11 +37,16 @@ export default {
 .cart {
   font-family: Arial, sans-serif;
   padding: 20px;
-  padding-left: 20px;
   background-color: #f9f9f9;
   border-radius: 8px;
   max-width: 600px;
   margin: 0 auto;
+}
+
+.cart-text {
+  padding-left: 10px; 
+  text-align: center ;
+  padding-right: 10px; 
 }
 
 h1 {
@@ -70,6 +78,7 @@ ul {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s;
+  /* align-items: center; */
 }
 
 .remove-btn:hover {
@@ -80,6 +89,7 @@ p {
   text-align: center;
   font-size: 18px;
   font-weight: bold;
+  /* align-items: center; */
 }
 
 p strong {

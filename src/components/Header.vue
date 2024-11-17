@@ -1,10 +1,11 @@
 <template>
     <header class="header">
-      
+      <router-link to="/">
       <div class="header-logo">
-        <img src="/src/assets/logo.png" alt="Логотип" class="logo-icon" />
+        <img src="/src/assets/logo.png"  class="logo-icon" />
         <span class="logo-text">ДариБроБобро</span>
       </div>
+       </router-link>
   
       
       <nav class="header-nav">
@@ -36,7 +37,7 @@
   export default {
     setup() {
       const store = useStore();
-      // Вычисление количества товаров в корзине
+      // Вычисление количества товаров в корзине для вывода на иконке корзины
       const cartCount = computed(() => store.cart.length);
       return { cartCount };
     }
