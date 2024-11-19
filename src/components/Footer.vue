@@ -4,17 +4,17 @@
 
       <router-link to="/"> 
       <div class="footer__logo">
-        <img src="/src/assets/logo.png" alt="Логотип" class="logo-icon" />
+        <img src="/src/assets/img/logo.png" alt="Логотип" class="logo-icon" />
         ДариБроДобро</div>
       </router-link>
 
 
       <div class="header-cart">
         <router-link to="/cart" class="cart-icon-wrapper">
-          <img src="/src/assets/FacebookLogo.png" alt="facebook" class="cart-icon" />
-          <img src="/src/assets/Instagramlogo.png" alt="instagram" class="cart-icon" />
-          <img src="/src/assets/twitterlogo.png" alt="twitter" class="cart-icon" />
-          <img src="/src/assets/youtubelogo.png" alt="youtube" class="cart-icon" />
+          <img src="/src/assets/img/FacebookLogo.png" alt="facebook" class="cart-icon" />
+          <img src="/src/assets/img/Instagramlogo.png" alt="instagram" class="cart-icon" />
+          <img src="/src/assets/img/twitterlogo.png" alt="twitter" class="cart-icon" />
+          <img src="/src/assets/img/youtubelogo.png" alt="youtube" class="cart-icon" />
         </router-link>
       </div>
 

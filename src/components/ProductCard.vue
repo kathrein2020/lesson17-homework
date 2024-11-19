@@ -1,4 +1,5 @@
-<template>
+<!-- карточка товара  для главного меню-->
+<template>   
     <div class="product-card">
     <img :src="product.image" alt="Изображение товара" class="product-image" />
     <div class="product-info">
@@ -14,7 +15,7 @@
         <span :class="{ 'discounted-price': product.oldPrice }">{{ product.price }}₸</span>
       </p>
 
-     <div class="product-seller"><img src="/src/assets/User.png" alt="Корзина" class="cart-icon" />  {{ product.seller }}</div>
+     <div class="product-seller"><img src="/src/assets/img/User.png" alt="Корзина" class="cart-icon" />  {{ product.seller }}</div>
     
     </div>
     <button class="add-to-cart-btn" @click="$emit('add-to-cart', product)">+</button>

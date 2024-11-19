@@ -1,3 +1,4 @@
+<!-- описание карточки товара после нажатия на нем в отдельном окне -->
 <template>
   <div class="product-page" v-if="product">
     <h1>{{ product.name }}</h1>

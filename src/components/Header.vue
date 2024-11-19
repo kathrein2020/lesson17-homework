@@ -2,7 +2,7 @@
     <header class="header">
       <router-link to="/">
       <div class="header-logo">
-        <img src="/src/assets/logo.png"  class="logo-icon" />
+        <img src="/src/assets/img/logo.png"  class="logo-icon" />
         <span class="logo-text">ДариБроБобро</span>
       </div>
        </router-link>
@@ -17,13 +17,14 @@
 
 
       <div class="header-cart">
-        <router-link to="/" class="nav-item"><img src="/src/assets/Search.png" alt="Корзина" class="cart-icon" /></router-link>
-        <router-link to="/" class="nav-item"><img src="/src/assets/User.png" alt="Корзина" class="cart-icon" /></router-link>
+        <router-link to="/" class="nav-item"><img src="/src/assets/img/Search.png" alt="Корзина" class="cart-icon" /></router-link>
+        <router-link to="/" class="nav-item"><img src="/src/assets/img/User.png" alt="Корзина" class="cart-icon" /></router-link>
         
         <router-link to="/cart" class="cart-icon-wrapper">
   
-          <img src="/src/assets/cart-icon.png" alt="Корзина" class="cart-icon" />
-          <span v-if="cartCount > 0" class="cart-badge">{{ cartCount }}</span>
+          <img src="/src/assets/img/cart-icon.png" alt="Корзина" class="cart-icon" />
+          <span v-if="cartCount > 0" class="cart-badge">{{ cartCount }}</span> 
+          <!-- //если больше 0 подключаем cartCount для подсчета -->
          
         </router-link>
       </div>

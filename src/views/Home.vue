@@ -14,7 +14,7 @@
       </div>
 
     </div>
-    <img src="@/assets/girl.png" alt="Баннер общий" class="banner-image" />
+    <img src="@/assets/img/girl.png" alt="Баннер общий" class="banner-image" />
     </div>
 
 
@@ -104,7 +104,7 @@ export default {
 
 .banner-image {
   max-width: 40%;
-  background-image: url('../src/assets/big_heart.png');
+  background-image: url('../src/assets/img/big_heart.png');
   background-size: 500px 500px; 
   background-position: center 20px;
   background-repeat: no-repeat;

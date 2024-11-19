@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import Home from '../views/Home.vue';
-import ProductDetail from '../views/ProductDetail.vue';
-import Cart from '../views/Cart.vue';
+import Home from '../views/Home.vue'; // гл. стран
+import ProductDetail from '../views/ProductDetail.vue';  //подробнее о товара после клика
+import Cart from '../views/Cart.vue';  //корзина покупок
 
 const routes = [
   { path: '/', component: Home },

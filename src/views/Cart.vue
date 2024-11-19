@@ -9,16 +9,20 @@
            <p> <strong> {{ item.price }} ₸  </strong>  </p>
                   {{ item.selectedOption }}
   </div>
+      <!-- удаление товара, скрипт достают из  /store/index/js   через import { useStore } from '../store';-->
           <button class="remove-btn" @click="removeFromCart(item.id)">Удалить</button>        
       </li>
     </ul>
 
     <p v-if="cart.length === 0">Корзина пуста, налетай заполняй!</p>
+
+    <!-- сумма, скрипт достают из  /store/index/js -->
     <p v-else>Итоговая сумма: <strong> {{ calculateTotal() }} ₸ </strong></p>
   </div>
 </template>
 
 <script>
+
 import { useStore } from '../store';
 
 export default {
